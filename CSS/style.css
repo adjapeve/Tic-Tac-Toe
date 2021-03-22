@@ -1,0 +1,66 @@
+:root {
+    --headerHeight: 15vh;
+    --headerFontSize:7em;
+    --cellSize:120px;
+    --boardBackground:rgb(124, 108, 119);
+    --fontColorAnnouncer:white;    
+  }
+body{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(255, 231, 135);
+}
+#wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: var(--headerHeight);
+    width: 100%;
+    font-size: var(--headerFontSize);
+    font-family: 'Fredoka One', cursive;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color:var(--boardBackground);
+    border-radius: 50px;
+    transition: background-color 1.5s ease;
+}
+#playAnnouncer{
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+    color:var(--fontColorAnnouncer);
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+#grid{
+    display: grid;
+    grid-template-columns:repeat(3,var(--cellSize));
+    grid-template-rows:repeat(3,var(--cellSize));
+}
+.cell{
+    border: 1px solid black;
+    font-size: 6.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+button{
+    height: 50px;
+    width: 100px;
+    font-size: 1.5em;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: honeydew;
+}
