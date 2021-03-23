@@ -4,7 +4,7 @@
     --cellSize:120px;
     --boardBackground:rgb(124, 108, 119);
     --fontColorAnnouncer:white;    
-  }
+}
 body{
     display:flex;
     justify-content: center;
@@ -64,3 +64,21 @@ button{
     border-radius: 10px;
     background-color: honeydew;
 }
+@media (orientation: portrait) {
+    :root {
+        --cellSize:240px;   
+        --headerFontSize:10em;
+    }
+    .cell{
+        font-size: 13rem;
+    }
+    #playAnnouncer{
+        height: 6vh;
+        font-size: 4em;
+    }
+    button{
+        height: 100px;
+        width: 200px;
+        font-size: 3em;
+    }
+  }
